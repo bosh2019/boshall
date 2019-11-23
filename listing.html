@@ -1,0 +1,415 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+        <!--=============== basic  ===============-->
+        <meta charset="UTF-8">
+        <title>Boshall</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="robots" content="index, follow"/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <!--=============== css  ===============-->
+        <link type="text/css" rel="stylesheet" href="css/reset.css">
+        <link type="text/css" rel="stylesheet" href="css/plugins.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link type="text/css" rel="stylesheet" href="css/color.css">
+        <!--=============== favicons ===============-->
+        <link rel="shortcut icon" href="images/favicon.png">
+    </head>
+    <body>
+        <!--loader-->
+        <div class="loader-wrap">
+            <div class="pin"></div>
+            <div class="pulse"></div>
+        </div>
+        <!--loader end-->
+        <!-- Main  -->
+        <div id="main">
+            <!-- header-->
+            <header class="main-header dark-header fs-header sticky">
+                <div class="header-inner">
+                    <div class="logo-holder">
+                        <a href="index.html"><img src="images/logo.png" alt=""></a>
+                    </div>
+                    
+                   
+                    <div class="show-reg-form modal-open"><i class="fa fa-sign-in"></i>Sign In</div>
+                    <!-- nav-button-wrap-->
+                    <div class="nav-button-wrap color-bg">
+                        <div class="nav-button">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <!-- nav-button-wrap end-->
+                    <!--  navigation -->
+                    <div class="nav-holder main-menu">
+                        <nav>
+                            <ul>
+                                <li> <a href="#" class="act-link">Home </a>  </li>
+                                <li> <a href="#">Buy</a></li>
+                                <li> <a href="#">Rent</a></li>
+                               <!-- <li> <a href="#">Sell</a></li>-->
+                              
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- navigation  end -->
+                </div>
+            </header>
+            <!--  header end -->
+            <!-- wrapper -->
+            <div id="wrapper">
+                <div class="content">
+                    <!-- Map -->
+                    <div class="map-container column-map left-pos-map">
+                        <div id="map-main1">
+                        
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448181.163741622!2d76.81306442366602!3d28.64727993557044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1556955088348!5m2!1sen!2sin" width="100%" height="550" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                        <!--<ul class="mapnavigation">
+                            <li><a href="#" class="prevmap-nav">Prev</a></li>
+                            <li><a href="#" class="nextmap-nav">Next</a></li>
+                        </ul>-->
+						<div class="scrollContorl mapnavbtn" title="Enable Scrolling"><span><i class="fa fa-lock"></i></span></div>  						
+                    </div>
+                    <!-- Map end -->
+                    <!--col-list-wrap -->
+                    <div class="col-list-wrap right-list">
+                        <div class="listsearch-options fl-wrap" id="lisfw" >
+                            <div class="container">
+                                <!--<div class="listsearch-header fl-wrap">
+                                    <h3>Results For : <span>Food and Drink</span></h3>
+                                    <div class="listing-view-layout">
+                                        <ul>
+                                            <li><a class="grid active" href="#"><i class="fa fa-th-large"></i></a></li>
+                                            <li><a class="list" href="#"><i class="fa fa-list-ul"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>-->
+                                <!-- listsearch-input-wrap  -->
+                                <div class="listsearch-input-wrap fl-wrap">
+                                   <div class="listsearch-input-item">
+                                        <select data-placeholder="Price"class="chosen-select" >
+                                            <option>Low To High</option>
+                                            <option>High To Low</option>
+                                           
+                                        </select>
+                                    </div>
+                                   
+                                    <div class="listsearch-input-item">
+                                        <select data-placeholder="Location" class="chosen-select" >
+                                            <option>All Locations</option>
+                                            <option>Bronx</option>
+                                            <option>Brooklyn</option>
+                                            <option>Manhattan</option>
+                                            <option>Queens</option>
+                                            <option>Staten Island</option>
+                                        </select>
+                                    </div>
+                                    <div class="listsearch-input-item">
+                                        <select data-placeholder="All Categories" class="chosen-select" >
+                                            <option>All Categories</option>
+                                           <option>Buy</option>
+                                                <!--<option>Sell</option>-->
+                                                <option>Rent</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <!-- hidden-listing-filter -->
+                                    <div class="hidden-listing-filter fl-wrap">
+                                        <!--<div class="distance-input fl-wrap">
+                                            <div class="distance-title"> Radius around selected destination <span></span> km</div>
+                                            <div class="distance-radius-wrap fl-wrap">
+                                                <input class="distance-radius rangeslider--horizontal" type="range" min="1" max="100" step="1" value="1" data-title="Radius around selected destination">
+                                            </div>
+                                        </div>-->
+                                        <!-- Checkboxes -->
+                                        <div class=" fl-wrap filter-tags">
+                                            <h4>Filter </h4>
+                                            <input id="check-a" type="checkbox" name="check">
+                                            <label for="check-a">Newest</label>
+                                            <input id="check-b" type="checkbox" name="check">
+                                            <label for="check-b">Cheapest</label>
+                                           
+                                        </div>
+                                    </div>
+                                    <!-- hidden-listing-filter end -->
+                                 <!--   <button class="button fs-map-btn" style="margin-top:5px">Apply</button>-->
+                                    <div class="more-filter-option">More Filters <span></span></div>
+                                </div>
+                                <!-- listsearch-input-wrap end -->
+                            </div>
+                        </div>
+                        <!-- list-main-wrap-->
+                        <div class="list-main-wrap fl-wrap card-listing">
+                            <a class="custom-scroll-link back-to-filters btf-r" href="#lisfw"><i class="fa fa-angle-double-up"></i><span>Back to Filters</span></a>
+                            <div class="container">
+                                <!-- listing-item -->
+                               
+                                <div class="listing-item">
+                                
+                                       <a href="detail.html"> <article class="geodir-category-listing fl-wrap">
+                                            <div class="geodir-category-img">
+                                                <img src="images/all/item_3.jpg" alt="">
+                                                <div class="overlay"></div>
+                                              <div class="list-post-counter"><i class="fa fa-heart-o"></i></div>
+                                            </div>
+                                            <div class="geodir-category-content fl-wrap">
+                                                <h3>$229,900</h3>
+                                                <p>Morbiaccumsan ipsum velit tincidunt . </p>
+                                                <div class="geodir-category-options fl-wrap">
+                                                    
+                                                    <div class="geodir-category-location"><i class="fa fa-map-marker" aria-hidden="true"></i> 27th Brooklyn New York, NY 10065</div>
+                                                </div>
+                                            </div>
+                                        </article></a>
+                                    </div>
+                                     <img class="hover-img" src="images/location.png">
+                                <!-- listing-item end-->
+                                
+                                <!-- listing-item -->
+                                <div class="listing-item">
+                                <a href="detail.html">
+                                        <article class="geodir-category-listing fl-wrap">
+                                            <div class="geodir-category-img">
+                                                <img src="images/all/item_1.jpg" alt="">
+                                                <div class="overlay"></div>
+                                              <div class="list-post-counter"><i class="fa fa-heart-o"></i></div>
+                                            </div>
+                                            <div class="geodir-category-content fl-wrap">
+                                                <h3>$229,900</h3>
+                                                <p>Morbiaccumsan ipsum velit tincidunt . </p>
+                                                <div class="geodir-category-options fl-wrap">
+                                                    
+                                                    <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 27th Brooklyn New York, NY 10065</a></div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        </a>
+                                    </div>
+                                     <img class="hover-img" src="images/location.png">
+                                <!-- listing-item end-->
+                              
+                                <div class="clearfix"></div>
+                                
+                                  <!-- listing-item -->
+                                <div class="listing-item">
+                                <a href="detail.html">
+                                        <article class="geodir-category-listing fl-wrap">
+                                            <div class="geodir-category-img">
+                                                <img src="images/all/item_2.jpg" alt="">
+                                                <div class="overlay"></div>
+                                              <div class="list-post-counter"><i class="fa fa-heart"></i></div>
+                                            </div>
+                                            <div class="geodir-category-content fl-wrap">
+                                                <h3>$229,900</h3>
+                                                <p>Morbiaccumsan ipsum velit tincidunt . </p>
+                                                <div class="geodir-category-options fl-wrap">
+                                                    
+                                                    <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 27th Brooklyn New York, NY 10065</a></div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        </a>
+                                    </div>
+                                     
+                                <!-- listing-item end-->
+                                
+                                <!-- listing-item -->
+                                <div class="listing-item">
+                                <a href="detail.html">
+                                        <article class="geodir-category-listing fl-wrap">
+                                            <div class="geodir-category-img">
+                                                <img src="images/all/item_4.jpg" alt="">
+                                                <div class="overlay"></div>
+                                              <div class="list-post-counter"><i class="fa fa-heart"></i></div>
+                                            </div>
+                                            <div class="geodir-category-content fl-wrap">
+                                                <h3>$229,900</h3>
+                                                <p>Morbiaccumsan ipsum velit tincidunt . </p>
+                                                <div class="geodir-category-options fl-wrap">
+                                                    
+                                                    <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 27th Brooklyn New York, NY 10065</a></div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        </a>
+                                    </div>
+                                    
+                                <!-- listing-item end-->
+                              
+                                <div class="clearfix"></div>
+                                
+                                
+                                  <!-- listing-item -->
+                                <div class="listing-item">
+                                        <article class="geodir-category-listing fl-wrap">
+                                            <div class="geodir-category-img">
+                                                <img src="images/all/item_5.jpg" alt="">
+                                                <div class="overlay"></div>
+                                              <div class="list-post-counter"><i class="fa fa-heart"></i></div>
+                                            </div>
+                                            <div class="geodir-category-content fl-wrap">
+                                                <h3>$229,900</h3>
+                                                <p>Morbiaccumsan ipsum velit tincidunt . </p>
+                                                <div class="geodir-category-options fl-wrap">
+                                                    
+                                                    <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 27th Brooklyn New York, NY 10065</a></div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    
+                                <!-- listing-item end-->
+                                
+                                <!-- listing-item -->
+                                <div class="listing-item">
+                                        <article class="geodir-category-listing fl-wrap">
+                                            <div class="geodir-category-img">
+                                                <img src="images/all/item_6.jpg" alt="">
+                                                <div class="overlay"></div>
+                                              <div class="list-post-counter"><i class="fa fa-heart"></i></div>
+                                            </div>
+                                            <div class="geodir-category-content fl-wrap">
+                                                <h3>$229,900</h3>
+                                                <p>Morbiaccumsan ipsum velit tincidunt . </p>
+                                                <div class="geodir-category-options fl-wrap">
+                                                    
+                                                    <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 27th Brooklyn New York, NY 10065</a></div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                     
+                                <!-- listing-item end-->
+                              
+                                <div class="clearfix"></div>
+                           
+                            </div>
+                            <a class="load-more-button" href="#">Load more <i class="fa fa-circle-o-notch"></i> </a>
+                        </div>
+                        <!-- list-main-wrap end-->
+                    </div>
+                    <!--col-list-wrap end -->
+                    <div class="limit-box fl-wrap"></div>
+                    <!--section -->
+             <!--       <section class="gradient-bg">
+                        <div class="cirle-bg">
+                            <div class="bg" data-bg="images/bg/circle.png"></div>
+                        </div>
+                        <div class="container">
+                            <div class="join-wrap fl-wrap">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h3>Join our online community</h3>
+                                        <p>Grow your marketing and be happy with your online business</p>
+                                    </div>
+                                    <div class="col-md-4"><a href="#" class="join-wrap-btn modal-open">Sign Up <i class="fa fa-sign-in"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>-->
+                    <!--section end -->
+                </div>
+                <!--content end -->
+            </div>
+            <!-- wrapper end --> 
+         <!--footer -->
+            <footer class="main-footer ">
+                  <div class="sub-footer fl-wrap">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="about-widget">
+                                    <img src="images/logo.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="copyright"> &#169; Boshall 2019 .  All rights reserved.</div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="footer-social">
+                                    <ul>
+                                        <li><a href="#" target="_blank" ><i class="fa fa-facebook-official"></i></a></li>
+                                        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" target="_blank" ><i class="fa fa-chrome"></i></a></li>
+                                        <li><a href="#" target="_blank" ><i class="fa fa-vk"></i></a></li>
+                                        <li><a href="#" target="_blank" ><i class="fa fa-whatsapp"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!--footer end  -->
+            <!--register form -->
+            <div class="main-register-wrap modal">
+                <div class="main-overlay"></div>
+                <div class="main-register-holder">
+                    <div class="main-register fl-wrap">
+                        <div class="close-reg"><i class="fa fa-times"></i></div>
+                        <h3>Sign In <span>Bos<strong>Hall</strong></span></h3>
+                        <!--<div class="soc-log fl-wrap">
+                            <p>For faster login or register use your social account.</p>
+                            <a href="#" class="facebook-log"><i class="fa fa-facebook-official"></i>Log in with Facebook</a>
+                            <a href="#" class="twitter-log"><i class="fa fa-twitter"></i> Log in with Twitter</a>
+                        </div>-->
+                     <!--   <div class="log-separator fl-wrap"><span>or</span></div>-->
+                        <div id="tabs-container">
+                            <ul class="tabs-menu">
+                                <li class="current"><a href="#tab-1">Login</a></li>
+                                <li><a href="#tab-2">Register</a></li>
+                            </ul>
+                            <div class="tab">
+                                <div id="tab-1" class="tab-content">
+                                    <div class="custom-form">
+                                        <form method="post"  name="registerform">
+                                            <label>Username or Email Address * </label>
+                                            <input name="email" type="text"   onClick="this.select()" value="">
+                                            <label >Password * </label>
+                                            <input name="password" type="password"   onClick="this.select()" value="" >
+                                            <button type="submit"  class="log-submit-btn"><span>Log In</span></button>
+                                            <div class="clearfix"></div>
+                                            <div class="filter-tags">
+                                                <input id="check-a" type="checkbox" name="check">
+                                                <label for="check-a">Remember me</label>
+                                            </div>
+                                        </form>
+                                        <div class="lost_password">
+                                            <a href="#">Lost Your Password?</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab">
+                                    <div id="tab-2" class="tab-content">
+                                        <div class="custom-form">
+                                            <form method="post"   name="registerform" class="main-register-form" id="main-register-form2">
+                                                <label >First Name * </label>
+                                                <input name="name" type="text"   onClick="this.select()" value="">
+                                                <label>Second Name *</label>
+                                                <input name="name2" type="text"  onClick="this.select()" value="">
+                                                <label>Email Address *</label>
+                                                <input name="email" type="text"  onClick="this.select()" value="">
+                                                <label >Password *</label>
+                                                <input name="password" type="password"   onClick="this.select()" value="" >
+                                                <button type="submit"     class="log-submit-btn"  ><span>Register</span></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!--register form end -->
+            <a class="to-top"><i class="fa fa-angle-up"></i></a> 
+        </div>
+        <!-- Main end -->
+        <!--=============== scripts  ===============-->     
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/plugins.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwJSRi0zFjDemECmFl9JtRj1FY7TiTRRo&amp;libraries=places&amp;callback=initAutocomplete"></script>
+    </body>
+</html>

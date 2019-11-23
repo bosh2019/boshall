@@ -1,0 +1,30 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteRule ^property/([a-zA-Z0-9_.,%-]+)/([a-zA-Z0-9_.,%-]+)/([a-zA-Z0-9_.,%-]+)$ listing.php?ptype=$1&searchtype=$2&type=$3
+
+RewriteRule ^property/([a-zA-Z0-9_.,%-]+)/([a-zA-Z0-9_.,%-]+)/([a-zA-Z0-9_.,%-]+)/([a-zA-Z0-9_.,%-]+)$ listing.php?ptype=$1&searchtype=$2&type=$3&page=$4
+
+RewriteRule ^property/([a-zA-Z0-9_.,%-]+)/([a-zA-Z0-9_.,%-]+)/([a-zA-Z0-9_.,%-]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)$ listing.php?ptype=$1&searchtype=$2&type=$3&min_price=$4&max_price=$5&beds=$6&baths=$7&other=$8
+
+RewriteRule ^property/([a-zA-Z0-9_.,%-]+)/([a-zA-Z0-9_.,%-]+)/([a-zA-Z0-9_.,%-]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)$ listing.php?ptype=$1&searchtype=$2&type=$3&min_price=$4&max_price=$5&beds=$6&baths=$7&other=$8&page=$9
+
+
+RewriteRule ^property/([a-zA-Z0-9_.,%-]+)$ detail.php?id=$1
+
+RewriteRule ^my-wishlist$ wishlist.php
+
+RewriteRule ^book/([a-zA-Z0-9_.,%-]+)$ form.php?id=$1
+RewriteRule ^changepassword/([a-zA-Z0-9_.,%-]+)$ changepassword.php?id=$1
+ RewriteRule ^why-sell$ sell-with-boshall.php
+
+RewriteRule ^log-out$ logout.php
+
+RewriteRule ^buy$ buy-with-boshall.php
+
+ RewriteRule ^thank-you$ thankyou.php
+
+
+# BEGIN WordPress
+
